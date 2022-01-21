@@ -29,7 +29,7 @@ button{
     color: #fff;
     text-shadow: 1px 1px 1px #000;
     border-radius: 10px;
-    background-color:#3d4898;
+    background-color:#3d76a6;
     background-image: linear-gradient(to top left,
                                       rgba(0, 0, 0, .2),
                                       rgba(0, 0, 0, .2) 30%,
@@ -39,6 +39,28 @@ button{
 }
 
 input{
-  background-color: #3d4898;
+  background-color: #3d76a6;
+  border: none;
 }
+#result{
+  color:#3d76a6 ;
+  font-family: monospace;
+}
+.page-header{
+  font-family: monospace;
+    text-align: center;
+    color:#3d76a6;
+    
+      width: 100%;
+      height: 100px;
+      
+      position: relative;
+      animation-name: example;
+      animation-duration: 4s;
+      animation-direction: reverse;
+}
+
+@keyframes example {
+ 0%{left:0px; top:0px;}
+  }
 

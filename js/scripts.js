@@ -10,8 +10,10 @@ $("document").ready(function() {
 function beepBoop(num) {
   let result = []
   let numArray = []
-  for (var i = 0; i <= num; i++) {
-    numArray.push(i);
+  if (num != "") {
+    for (var i = 0; i <= num; i++) {
+      numArray.push(i);
+    }
   }
   numArray.map(function(element) {
     if ((element === 3) || (element.toString().includes(3))) {
@@ -26,4 +28,3 @@ function beepBoop(num) {
   });
   return result.join();
 }
-
