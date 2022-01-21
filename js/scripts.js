@@ -11,7 +11,15 @@ function beepBoop(num)
 
     }
     if (i === 1){
-      result.push("beep");
+      result.push("Beep!");
+      console.log ("result1"+result);
+    }
+    if (i === 2){
+      result.push("Boop!");
+      console.log ("result1"+result);
+    }
+    if (i === 3){
+      result.push("Won't you be my neighbor?");
       console.log ("result1"+result);
     }
   }
@@ -19,6 +27,6 @@ function beepBoop(num)
 
   return result.join();
 }
-let input =1;
+let input =3;
 let greet= beepBoop(input);
 console.log ("greet"+greet);
