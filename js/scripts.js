@@ -22,9 +22,13 @@ function beepBoop(num)
       result.push("Won't you be my neighbor?");
       console.log ("result1"+result);
     }
+    else if(i.toString().includes(2))
+    {
+      result.push("Boop!");
+    }
     else if(i.toString().includes(1))
     {
-      result.push("Beep");
+      result.push("Beep!");
     }
 
   }
@@ -32,6 +36,6 @@ function beepBoop(num)
 
   return result.join();
 }
-let input =9;
+let input =12;
 let greet= beepBoop(input);
 console.log ("greet"+greet);

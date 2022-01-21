@@ -54,13 +54,14 @@ Code: beepBoop(3);
 Expected Output: 0,Beep!,Boop!,Won't you be my neighbor?
 
 Test: "It should return "0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9" if the number 9 is inputted"
-Code: beepBoop(3);
+Code: beepBoop(9);
 Expected Output: 0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9
 
-Test: "It should return "0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9" if the number 9 is inputted"
-Code: beepBoop(10);
-Expected Output: 0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9
 
 Test: "It should return "0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!" if the number 10 is inputted"
 Code: beepBoop(10);
 Expected Output: 0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!
+
+Test: "It should return "0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!" if the number 12 is inputted"
+Code: beepBoop(12);
+Expected Output: 0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!,Boop!
