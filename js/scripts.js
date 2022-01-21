@@ -1,8 +1,10 @@
 $("document").ready(function() {
   $("form#beep").submit(function(event) {
     let input = $("#num").val();
+    let name = $("#name").val();
     let greet = beepBoop(input);
-    $("#result").html(greet);
+    $("#result").text(greet).show();
+    //text(greet).slideDown();
     event.preventDefault();
   });
 });
