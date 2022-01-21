@@ -1,4 +1,14 @@
+$("document").ready(function(){
+  $("form#beep").submit(function(event){
+    
+    let input= $("#num").val();
+    let greet = beepBoop(input);
+    console.log("greet" + greet);
+    $("#result").html(greet);
+    event.preventDefault();
+  });
 
+});
 
 function beepBoop(num) {
   let result = []
@@ -19,6 +29,4 @@ function beepBoop(num) {
   });
   return result.join();
 }
-let input = 15;
-let greet = beepBoop(input);
-console.log("greet" + greet);
+
