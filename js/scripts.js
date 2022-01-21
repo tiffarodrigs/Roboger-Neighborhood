@@ -6,15 +6,11 @@ function beepBoop(num)
     console.log("i" +i);
   
     if(i === 0){
-        i.toString();
-      //result.concat(i.toString());
       result.push(i.toString());
       console.log ("result0"+result);
 
     }
     if (i === 1){
-      //result.concat("beep");
-      //result =result +"beep";
       result.push("beep");
       console.log ("result1"+result);
     }
