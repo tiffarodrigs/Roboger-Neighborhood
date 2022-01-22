@@ -74,3 +74,10 @@ Expected Output: 0,Beep!,Boop!,Won't you be my neighbor?,4,5,6,7,8,9,Beep!,Beep!
 Test: "It should return nothing if the input is empty
 Code: beepBoop();
 Expected Output:
+
+
+Describe: changeImage(num) 
+
+Test: "It should return different image based on the number entered
+Code: changeImage(num);
+Expected Output:Different image

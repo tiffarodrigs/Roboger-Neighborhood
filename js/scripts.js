@@ -3,8 +3,8 @@ $("document").ready(function() {
     let input = $("#num").val();
     let userName = $("#name").val();
     let greet = beepBoop(input, userName);
+    changeImage(input);
     $("#result").text(greet).show();
-    //text(greet).slideDown();
     event.preventDefault();
   });
 });
@@ -32,12 +32,16 @@ function beepBoop(num, personName) {
   return result.join();
 }
 
-/*function changeImage(num) {
+function changeImage(num) {
   var image = document.getElementById('myImage');
-  if (num > 10) {
-      $("img").src = "waterbottel.gif";
+  if (num < 10) {
+    $("img").attr("src", "img/image2.jpeg");
+  } else if (num < 30) {
+    $("img").attr("src", "img/image3.jpeg");
+  } else if (num < 40) {
+    $("img").attr("src", "img/image4.jpeg");
+  } else {
+    $("img").attr("src", "img/image1.jpeg");
   }
-  else if (num > 20) { 
-      image.src = "colorbottel.gif";
-  }
-}*/
+
+}
