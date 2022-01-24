@@ -19,7 +19,7 @@ function beepBoop(num, personName) {
   }
   numArray.map(function(element) {
     if ((element === 3) || (element.toString().includes(3))) {
-      result.push("Won't you be my neighbor?," + personName);
+      result.push("Won't you be my neighbor? " + personName);
     } else if ((element === 2) || (element.toString().includes(2))) {
       result.push("Boop!");
     } else if ((element === 1) || (element.toString().includes(1))) {
